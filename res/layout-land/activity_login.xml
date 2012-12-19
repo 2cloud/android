@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/layout_bg"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/welcome_message"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/padding_medium"
+        android:layout_weight="1"
+        android:background="@drawable/foreground" >
+
+        <TextView
+            android:id="@+id/welcome_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/welcome"
+            android:textSize="@dimen/text_large"
+            tools:context=".LoginActivity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome_textview"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/setup_account_instructions"
+            android:textSize="@dimen/text_medium"
+            tools:context=".LoginActivity" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/google_account_fragment"
+        android:name="org.twocloud.android.GoogleAccountFragment"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_google_account" />
+
+</LinearLayout>

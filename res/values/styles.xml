@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Variation on the Holo Light theme that styles the Action Bar -->
+    <style name="Theme.Twocloud" parent="Theme.Sherlock.Light">
+        <item name="android:actionBarStyle">@style/Twocloud.ActionBar</item>
+        <item name="actionBarStyle">@style/Twocloud.ActionBar</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/MyDropDownListView</item>
+        <item name="dropDownListViewStyle">@style/MyDropDownListView</item>
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabStyle</item>
+        <item name="actionBarTabStyle">@style/MyActionBarTabStyle</item>
+        <item name="android:actionDropDownStyle">@style/MyDropDownNav</item>
+        <item name="actionDropDownStyle">@style/MyDropDownNav</item>
+        <!--
+        <item name="android:listChoiceIndicatorMultiple">@drawable/ad_btn_check_holo_light</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/ad_btn_radio_holo_light</item>
+        -->
+    </style>
+
+    <style name="Twocloud.ActionBar" parent="Widget.Sherlock.Light.ActionBar">
+        <item name="android:background">@drawable/action_bar_gradient</item>
+        <item name="background">@drawable/action_bar_gradient</item>
+        <item name="displayOptions">showCustom</item>
+        <item name="android:displayOptions">showCustom</item>
+        <item name="customNavigationLayout">@layout/action_bar_no_icon</item>
+        <item name="android:customNavigationLayout">@layout/action_bar_no_icon</item>
+    </style>
+
+    <style name="Twocloud.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFEFF</item>
+    </style>
+
+    <!-- style the overflow menu -->
+    <style name="MyPopupMenu" parent="Widget.Sherlock.Light.PopupMenu">
+        <!-- item name="android:popupBackground">@drawable/ad_menu_dropdown_panel_holo_light</item> -->
+    </style>
+
+    <!-- style the items within the overflow menu -->
+    <style name="MyDropDownListView" parent="Widget.Sherlock.ListView.DropDown">
+        <!-- <item name="android:listSelector">@drawable/ad_selectable_background</item> -->
+    </style>
+
+    <!-- style for the tabs -->
+    <style name="MyActionBarTabStyle" parent="Widget.Sherlock.Light.ActionBar.TabBar">
+
+        <!-- <item name="android:background">@drawable/actionbar_tab_bg</item> -->
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+    </style>
+
+    <!-- style the list navigation -->
+    <style name="MyDropDownNav" parent="Widget.Sherlock.Light.Spinner.DropDown.ActionBar">
+        <!--
+        <item name="android:background">@drawable/ad_spinner_background_holo_light</item>
+        <item name="android:popupBackground">@drawable/ad_menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/ad_selectable_background</item>
+        -->
+    </style>
+
+</resources>

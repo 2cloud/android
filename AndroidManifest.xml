@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.twocloud.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Twocloud" >
+        <activity
+            android:name="org.twocloud.android.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:taskAffinity="@string/setup_taskAffinity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.twocloud.android.GoogleAccountFragment"
+            android:label="@string/title_activity_google_account_fragment" >
+        </activity>
+        <activity
+            android:name="org.twocloud.android.RegisterActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/title_activity_register"
+            android:taskAffinity="@string/setup_taskAffinity" >
+        </activity>
+    </application>
+
+</manifest>

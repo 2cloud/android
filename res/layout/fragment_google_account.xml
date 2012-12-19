@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="@dimen/padding_medium"
+        android:listSelector="@color/selector_google_account" >
+    </ListView>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/token_loading_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/foreground"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/token_loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/padding_medium"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/token_loading_progress_bar"
+            android:layout_margin="@dimen/padding_medium"
+            android:paddingBottom="@dimen/padding_large"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/token_loading"
+            android:textSize="@dimen/text_medium" />
+    </RelativeLayout>
+
+</RelativeLayout>

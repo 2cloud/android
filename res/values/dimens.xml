@@ -1,0 +1,11 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="text_small">10sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_large">32sp</dimen>
+    <dimen name="text_action_bar">20sp</dimen>
+
+</resources>

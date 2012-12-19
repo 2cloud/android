@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">2cloud</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_login">Log In</string>
+    <string name="welcome">Welcome to 2cloud</string>
+    <string name="setup_account_instructions">To get started, please select an account below. You\'ll use this to log into 2cloud.</string>
+    <string name="next">Next</string>
+    <string name="title_activity_google_account_fragment">GoogleAccountFragment</string>
+    <string name="token_loading">Sit tight, we\'re retrieving your account credentials.</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="register_title">Register</string>
+    <string name="register_instructions">You don\'t seem to have an account on our server. Please just give us a little information about yourself.</string>
+    <string name="setup_taskAffinity">org.twocloud.android.affinities.install</string>
+
+</resources>

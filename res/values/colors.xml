@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_bar_text">#FFFEFF</color>
+    <color name="action_bar_grad_start">#54B4EB</color>
+    <color name="action_bar_grad_end">#2FA4E7</color>
+    <color name="layout_bg">#FBF4FA</color>
+    <color name="layout_fg">#FFFEFF</color>
+    <color name="layout_fg_border">#E1DFE1</color>
+    
+</resources>
